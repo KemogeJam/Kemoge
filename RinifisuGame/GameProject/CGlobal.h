@@ -1,0 +1,26 @@
+#pragma once
+
+//様々な機能
+#include "Include.h"
+
+//別クラス間でやり取りが必要な変数
+class CGlobal
+{
+private:
+	static CImage			m_Image;	//画像
+	static TexturePacker	m_Rect;		//画像範囲
+
+public:
+	static void Load_Image(std::string path);			//画像と画像範囲データの読み込み
+
+	static const CImage & Get_Image(std::string name);	//画像の取得
+};
+
+//タスク優先順位
+enum class EPriority
+{
+	//MainGame
+	CM_Img_Test = 0,
+
+	//その他
+};
