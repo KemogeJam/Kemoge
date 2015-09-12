@@ -5,6 +5,7 @@ CMainGame::CMainGame()
 {
 	//アセットの初期化
 	CGlobal::Load_Image("MainGame");
+	CGlobal::Load_Image("MainGame\\ViewState");
 }
 
 CMainGame::~CMainGame()
@@ -19,6 +20,7 @@ ESceneChange CMainGame::Update()
 	{
 	case EGameScene::Create:
 		m_Sys_Map = new CM_Sys_MapGenerator(10, 20);
+		m_View_State = new CM_View_State();
 
 		//m_Img_Num = new CM_Img_Number( );
 

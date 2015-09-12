@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:8904f9db4e89335ac87089466f2c31a8:ab20cf4f2a93195df126ed99cf3285ce:c9ebf87e8bd1f344d4f2ebc99260b1b7$ -->
+<TextureAtlas imagePath="ViewState.png" width="404" height="1515">
+    <SubTexture name="NumberPts" x="2" y="1211" width="341" height="137" frameX="-33" frameY="-33" frameWidth="400" frameHeight="200"/>
+    <SubTexture name="Background" x="2" y="2" width="400" height="960"/>
+    <SubTexture name="EnergyMeter" x="2" y="964" width="370" height="245" frameX="-15" frameY="-93" frameWidth="400" frameHeight="350"/>
+    <SubTexture name="MarkGround" x="2" y="1350" width="129" height="90" frameX="-6" frameY="-24" frameWidth="150" frameHeight="150"/>
+    <SubTexture name="MarkSpring" x="133" y="1350" width="127" height="89" frameX="-10" frameY="-22" frameWidth="150" frameHeight="150"/>
+    <SubTexture name="NumberLife" x="133" y="1441" width="177" height="72" frameX="-108" frameY="-60" frameWidth="400" frameHeight="200"/>
+</TextureAtlas>

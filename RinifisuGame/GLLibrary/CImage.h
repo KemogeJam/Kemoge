@@ -80,6 +80,10 @@ public:
 	void setSize(CVector2D s) {
 		m_vSize = s;
 	}
+
+	CVector2D getSize() {
+		return m_vSize;
+	}
 	/*!
 		@brief	ï\é¶å≥ãÈå`Çê›íË
 		@param	left	[in] ç∂à íu
@@ -93,6 +97,10 @@ public:
 		srcRect.m_right = static_cast<float>(right);
 		srcRect.m_top = static_cast<float>(top);
 		srcRect.m_bottom = static_cast<float>(bottom);
+	}
+
+	CRect getRect() {
+		return srcRect;
 	}
 
 	/*!
