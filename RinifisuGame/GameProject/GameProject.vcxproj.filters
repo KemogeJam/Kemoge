@@ -37,6 +37,12 @@
     <Filter Include="ソース ファイル\Tutorial">
       <UniqueIdentifier>{47bfc12d-5d7f-4067-902e-e58d59dc3c09}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ヘッダー ファイル\Result">
+      <UniqueIdentifier>{563689d0-6bfc-41b4-9d4a-d1e13a231b01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Result">
+      <UniqueIdentifier>{52c2bb18-b4dd-4787-8321-1bc2d9323fe4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -83,6 +89,12 @@
     </ClCompile>
     <ClCompile Include="CTutorial.cpp">
       <Filter>ソース ファイル\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="CResult.cpp">
+      <Filter>ソース ファイル\Result</Filter>
+    </ClCompile>
+    <ClCompile Include="CR_Background.cpp">
+      <Filter>ソース ファイル\Result</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -131,5 +143,19 @@
     <ClInclude Include="CTU_Background.h">
       <Filter>ヘッダー ファイル\Tutorial</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CResult.h">
+      <Filter>ヘッダー ファイル\Result</Filter>
+    </ClInclude>
+    <ClInclude Include="CR_Background.h">
+      <Filter>ヘッダー ファイル\Result</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RinifisuGame.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

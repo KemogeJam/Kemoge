@@ -5,7 +5,8 @@ enum class ESceneChange
 	None,
 	Title,
 	Tutorial,
-	Main
+	Main,
+	Result
 };
 
 class CScene
