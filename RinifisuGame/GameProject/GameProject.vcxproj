@@ -92,6 +92,7 @@
     <ClCompile Include="CGlobal.cpp" />
     <ClCompile Include="CM_Img_Block.cpp" />
     <ClCompile Include="CM_Img_Test.cpp" />
+    <ClCompile Include="CM_ParameterSystem.cpp" />
     <ClCompile Include="CResult.cpp" />
     <ClCompile Include="CR_Background.cpp" />
     <ClCompile Include="CM_Sys_MapGenerator.cpp" />
@@ -118,6 +119,7 @@
     <ClInclude Include="CGlobal.h" />
     <ClInclude Include="CM_Img_Block.h" />
     <ClInclude Include="CM_Img_Test.h" />
+    <ClInclude Include="CM_ParameterSystem.h" />
     <ClInclude Include="CResult.h" />
     <ClInclude Include="CR_Background.h" />
     <ClInclude Include="CM_Sys_MapGenerator.h" />
@@ -128,10 +130,12 @@
     <ClInclude Include="CTU_Background.h" />
     <ClInclude Include="Easing.h" />
     <ClInclude Include="EasingManager.h" />
+    <ClInclude Include="GameStatus.h" />
     <ClInclude Include="GameTask.h" />
     <ClInclude Include="Include.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="SM_Sys_MapData.h" />
+    <ClInclude Include="StageParameter.h" />
     <ClInclude Include="Stopwatch.h" />
     <ClInclude Include="TextManager.h" />
     <ClInclude Include="TexturePacker.h" />

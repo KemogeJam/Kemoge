@@ -64,6 +64,9 @@
     <ClCompile Include="main.cpp">
       <Filter>ソースファイル</Filter>
     </ClCompile>
+    <ClCompile Include="CM_ParameterSystem.cpp">
+      <Filter>ソースファイル\MainGame</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
@@ -135,6 +138,15 @@
     </ClInclude>
     <ClInclude Include="CGlobal.h">
       <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CM_ParameterSystem.h">
+      <Filter>ヘッダーファイル\MainGame</Filter>
+    </ClInclude>
+    <ClInclude Include="GameStatus.h">
+      <Filter>ヘッダーファイル\MainGame</Filter>
+    </ClInclude>
+    <ClInclude Include="StageParameter.h">
+      <Filter>ヘッダーファイル\MainGame</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
