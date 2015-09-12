@@ -86,6 +86,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AnimationImage.cpp" />
+    <ClCompile Include="CharacterImage.cpp" />
     <ClCompile Include="CMainGame.cpp" />
     <ClCompile Include="CGlobal.cpp" />
     <ClCompile Include="CM_Img_Test.cpp" />
@@ -107,6 +109,9 @@
     <ClCompile Include="CTutorial.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AnimationDetail.h" />
+    <ClInclude Include="AnimationImage.h" />
+    <ClInclude Include="CharacterImage.h" />
     <ClInclude Include="CMainGame.h" />
     <ClInclude Include="CGlobal.h" />
     <ClInclude Include="CM_Img_Test.h" />
@@ -125,9 +130,6 @@
     <ClInclude Include="Stopwatch.h" />
     <ClInclude Include="TextManager.h" />
     <ClInclude Include="TexturePacker.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="RinifisuGame.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

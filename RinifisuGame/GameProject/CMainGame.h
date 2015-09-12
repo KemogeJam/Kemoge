@@ -5,6 +5,7 @@
 
 //‚»‚Ì‘¼
 #include "CM_Img_Test.h"
+#include "CharacterImage.h"
 
 enum class EGameScene
 {
@@ -19,6 +20,7 @@ private:
 
 private:
 	GameTaskPointer<CM_Img_Test> m_Img_Text;
+	GameTaskPointer<CharacterImage> m_CharacterImage;
 
 public:
 	CMainGame();

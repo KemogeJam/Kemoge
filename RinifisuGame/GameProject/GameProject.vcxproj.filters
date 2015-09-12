@@ -43,6 +43,12 @@
     <Filter Include="ソース ファイル\Result">
       <UniqueIdentifier>{52c2bb18-b4dd-4787-8321-1bc2d9323fe4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ヘッダー ファイル\Animation">
+      <UniqueIdentifier>{50b97198-931f-4cfb-be52-828202e985ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Animation">
+      <UniqueIdentifier>{a004a3f5-9f60-4fa1-a324-01645e2fcd3d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -95,6 +101,12 @@
     </ClCompile>
     <ClCompile Include="CR_Background.cpp">
       <Filter>ソース ファイル\Result</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationImage.cpp">
+      <Filter>ソース ファイル\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterImage.cpp">
+      <Filter>ソース ファイル\MainGame</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -151,6 +163,15 @@
     </ClInclude>
     <ClInclude Include="CR_Background.h">
       <Filter>ヘッダー ファイル\Result</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationImage.h">
+      <Filter>ヘッダー ファイル\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationDetail.h">
+      <Filter>ヘッダー ファイル\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterImage.h">
+      <Filter>ヘッダー ファイル\MainGame</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
