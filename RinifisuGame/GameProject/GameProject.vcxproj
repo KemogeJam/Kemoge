@@ -88,9 +88,11 @@
   <ItemGroup>
     <ClCompile Include="CMainGame.cpp" />
     <ClCompile Include="CGlobal.cpp" />
+    <ClCompile Include="CM_Img_Block.cpp" />
     <ClCompile Include="CM_Img_Test.cpp" />
     <ClCompile Include="CResult.cpp" />
     <ClCompile Include="CR_Background.cpp" />
+    <ClCompile Include="CM_Sys_MapGenerator.cpp" />
     <ClCompile Include="CScene.cpp" />
     <ClCompile Include="CTitle.cpp" />
     <ClCompile Include="CTI_Background.cpp" />
@@ -109,9 +111,11 @@
   <ItemGroup>
     <ClInclude Include="CMainGame.h" />
     <ClInclude Include="CGlobal.h" />
+    <ClInclude Include="CM_Img_Block.h" />
     <ClInclude Include="CM_Img_Test.h" />
     <ClInclude Include="CResult.h" />
     <ClInclude Include="CR_Background.h" />
+    <ClInclude Include="CM_Sys_MapGenerator.h" />
     <ClInclude Include="CScene.h" />
     <ClInclude Include="CTitle.h" />
     <ClInclude Include="CTI_Background.h" />
@@ -125,9 +129,6 @@
     <ClInclude Include="Stopwatch.h" />
     <ClInclude Include="TextManager.h" />
     <ClInclude Include="TexturePacker.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="RinifisuGame.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
