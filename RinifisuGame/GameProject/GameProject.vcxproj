@@ -126,6 +126,7 @@
     <ClInclude Include="GameTask.h" />
     <ClInclude Include="Include.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="SM_Sys_MapData.h" />
     <ClInclude Include="Stopwatch.h" />
     <ClInclude Include="TextManager.h" />
     <ClInclude Include="TexturePacker.h" />

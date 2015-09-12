@@ -26,7 +26,14 @@ ESceneChange CMainGame::Update()
 		//----------------------------------------------------------------------------------------------------------//
 
 	case EGameScene::Wait:
+	{
+		static int debug = 0;
 
+		if (CInput::GetState(0, CInput::ePush, CInput::eButton1))
+		{
+			m_Sys_Map->CrashBlock(++debug);
+		}
+	}
 		break;
 
 		//----------------------------------------------------------------------------------------------------------//

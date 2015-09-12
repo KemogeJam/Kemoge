@@ -1,169 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="ソース ファイル">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="ヘッダー ファイル">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
-    <Filter Include="リソース ファイル">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="ソース ファイル\System">
-      <UniqueIdentifier>{76d13d93-842a-4f42-8949-39eb525156dd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\System">
-      <UniqueIdentifier>{4342b3ba-dbfa-4ecc-b4e1-cd2e26ebcf43}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\MainGame">
-      <UniqueIdentifier>{a64ddfd5-3076-40f1-8a95-428772a876b9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\MainGame">
-      <UniqueIdentifier>{54308c0b-5c95-4f1e-910e-03bc06a1602e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Title">
-      <UniqueIdentifier>{0ea81575-c4e7-46fa-ba1e-5c0ff107dd8d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Title">
-      <UniqueIdentifier>{c33cdade-5b3e-4d26-a201-e5347a7179e2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Tutorial">
-      <UniqueIdentifier>{1933f6cf-4c1b-46ee-b7c6-bd1bb337d7c3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Tutorial">
-      <UniqueIdentifier>{47bfc12d-5d7f-4067-902e-e58d59dc3c09}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Result">
-      <UniqueIdentifier>{563689d0-6bfc-41b4-9d4a-d1e13a231b01}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Result">
-      <UniqueIdentifier>{52c2bb18-b4dd-4787-8321-1bc2d9323fe4}</UniqueIdentifier>
-    </Filter>
+    <ClCompile Include="CMainGame.cpp" />
+    <ClCompile Include="CGlobal.cpp" />
+    <ClCompile Include="CM_Img_Block.cpp" />
+    <ClCompile Include="CM_Img_Test.cpp" />
+    <ClCompile Include="CResult.cpp" />
+    <ClCompile Include="CR_Background.cpp" />
+    <ClCompile Include="CM_Sys_MapGenerator.cpp" />
+    <ClCompile Include="CScene.cpp" />
+    <ClCompile Include="CTitle.cpp" />
+    <ClCompile Include="CTI_Background.cpp" />
+    <ClCompile Include="CTU_Background.cpp" />
+    <ClCompile Include="Easing.cpp" />
+    <ClCompile Include="EasingManager.cpp" />
+    <ClCompile Include="GameTask.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Stopwatch.cpp" />
+    <ClCompile Include="TextManager.cpp" />
+    <ClCompile Include="TexturePacker.cpp" />
+    <ClCompile Include="CTutorial.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="Easing.cpp">
-      <Filter>ソース ファイル\System</Filter>
-    </ClCompile>
-    <ClCompile Include="EasingManager.cpp">
-      <Filter>ソース ファイル\System</Filter>
-    </ClCompile>
-    <ClCompile Include="GameTask.cpp">
-      <Filter>ソース ファイル\System</Filter>
-    </ClCompile>
-    <ClCompile Include="Stopwatch.cpp">
-      <Filter>ソース ファイル\System</Filter>
-    </ClCompile>
-    <ClCompile Include="CMainGame.cpp">
-      <Filter>ソース ファイル\MainGame</Filter>
-    </ClCompile>
-    <ClCompile Include="TextManager.cpp">
-      <Filter>ソース ファイル\System</Filter>
-    </ClCompile>
-    <ClCompile Include="TexturePacker.cpp">
-      <Filter>ソース ファイル\System</Filter>
-    </ClCompile>
-    <ClCompile Include="CScene.cpp">
-      <Filter>ソース ファイル\System</Filter>
-    </ClCompile>
-    <ClCompile Include="CM_Img_Test.cpp">
-      <Filter>ソース ファイル\MainGame</Filter>
-    </ClCompile>
-    <ClCompile Include="CGlobal.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="CTitle.cpp">
-      <Filter>ソース ファイル\Title</Filter>
-    </ClCompile>
-    <ClCompile Include="CTI_Background.cpp">
-      <Filter>ソース ファイル\Title</Filter>
-    </ClCompile>
-    <ClCompile Include="CTU_Background.cpp">
-      <Filter>ソース ファイル\Tutorial</Filter>
-    </ClCompile>
-    <ClCompile Include="CTutorial.cpp">
-      <Filter>ソース ファイル\Tutorial</Filter>
-    </ClCompile>
-    <ClCompile Include="CResult.cpp">
-      <Filter>ソース ファイル\Result</Filter>
-    </ClCompile>
-    <ClCompile Include="CR_Background.cpp">
-      <Filter>ソース ファイル\Result</Filter>
-    <ClCompile Include="CM_Img_Block.cpp">
-      <Filter>ソース ファイル\MainGame</Filter>
-    </ClCompile>
-    <ClCompile Include="CM_Sys_MapGenerator.cpp">
-      <Filter>ソース ファイル\MainGame</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Easing.h">
-      <Filter>ヘッダー ファイル\System</Filter>
-    </ClInclude>
-    <ClInclude Include="EasingManager.h">
-      <Filter>ヘッダー ファイル\System</Filter>
-    </ClInclude>
-    <ClInclude Include="GameTask.h">
-      <Filter>ヘッダー ファイル\System</Filter>
-    </ClInclude>
-    <ClInclude Include="Stopwatch.h">
-      <Filter>ヘッダー ファイル\System</Filter>
-    </ClInclude>
-    <ClInclude Include="CMainGame.h">
-      <Filter>ヘッダー ファイル\MainGame</Filter>
-    </ClInclude>
-    <ClInclude Include="TextManager.h">
-      <Filter>ヘッダー ファイル\System</Filter>
-    </ClInclude>
-    <ClInclude Include="TexturePacker.h">
-      <Filter>ヘッダー ファイル\System</Filter>
-    </ClInclude>
-    <ClInclude Include="Include.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="CScene.h">
-      <Filter>ヘッダー ファイル\System</Filter>
-    </ClInclude>
-    <ClInclude Include="CM_Img_Test.h">
-      <Filter>ヘッダー ファイル\MainGame</Filter>
-    </ClInclude>
-    <ClInclude Include="CGlobal.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="CTitle.h">
-      <Filter>ヘッダー ファイル\Title</Filter>
-    </ClInclude>
-    <ClInclude Include="CTI_Background.h">
-      <Filter>ヘッダー ファイル\Title</Filter>
-    </ClInclude>
-    <ClInclude Include="CTutorial.h">
-      <Filter>ヘッダー ファイル\Tutorial</Filter>
-    </ClInclude>
-    <ClInclude Include="CTU_Background.h">
-      <Filter>ヘッダー ファイル\Tutorial</Filter>
-    </ClInclude>
-    <ClInclude Include="resource.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="CResult.h">
-      <Filter>ヘッダー ファイル\Result</Filter>
-    </ClInclude>
-    <ClInclude Include="CR_Background.h">
-      <Filter>ヘッダー ファイル\Result</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="CM_Img_Block.h">
-      <Filter>ヘッダー ファイル\MainGame</Filter>
-    </ClInclude>
-    <ClInclude Include="CM_Sys_MapGenerator.h">
-      <Filter>ヘッダー ファイル\MainGame</Filter>
-    </ClInclude>
+    <ClInclude Include="CMainGame.h" />
+    <ClInclude Include="CGlobal.h" />
+    <ClInclude Include="CM_Img_Block.h" />
+    <ClInclude Include="CM_Img_Test.h" />
+    <ClInclude Include="CResult.h" />
+    <ClInclude Include="CR_Background.h" />
+    <ClInclude Include="CM_Sys_MapGenerator.h" />
+    <ClInclude Include="CScene.h" />
+    <ClInclude Include="CTitle.h" />
+    <ClInclude Include="CTI_Background.h" />
+    <ClInclude Include="CTutorial.h" />
+    <ClInclude Include="CTU_Background.h" />
+    <ClInclude Include="Easing.h" />
+    <ClInclude Include="EasingManager.h" />
+    <ClInclude Include="GameTask.h" />
+    <ClInclude Include="Include.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Stopwatch.h" />
+    <ClInclude Include="TextManager.h" />
+    <ClInclude Include="TexturePacker.h" />
+    <ClInclude Include="SM_Sys_MapData.h" />
   </ItemGroup>
 </Project>

@@ -3,7 +3,7 @@
 CM_Sys_MapGenerator::CM_Sys_MapGenerator(const int level, const int depth)
 	: GameTask({ BIND(CM_Sys_MapGenerator::Update) }, (int)EPriority::CM_Sys_MapGenerator)
 
-	, m_Level(level), m_Group(0)
+	, m_Map({level, 0})
 {
 	//[‚³•ª‚¾‚¯¶¬‚·‚é
 	for (int l_Depth = 0; l_Depth < depth; ++l_Depth)
@@ -19,8 +19,8 @@ CM_Sys_MapGenerator::CM_Sys_MapGenerator(const int level, const int depth)
 
 bool CM_Sys_MapGenerator::PositionCollision(CVector2D target)
 {
-	std::vector<CVector2D>::const_iterator it = m_AddList.begin();
-	std::vector<CVector2D>::const_iterator end_It = m_AddList.end();
+	std::vector<CVector2D>::const_iterator it = m_Map.m_AddList.begin();
+	std::vector<CVector2D>::const_iterator end_It = m_Map.m_AddList.end();
 
 	while (it != end_It)
 	{
@@ -41,64 +41,71 @@ void CM_Sys_MapGenerator::CreateBlock(CVector2D start, const int back)
 	//À•W‚ª‚©‚Ô‚Á‚Ä‚¢‚ê‚Î‚»‚Ìê‚ÅI—¹
 	if (PositionCollision(start) || start.x < 0.0f || 8.0f < start.x || start.y < 0.0f) return;
 
-	if (back == -1) m_Group++;
+	if (back == -1) m_Map.m_Group++;
 
-	unsigned int nextID = m_Img_Block.nextID();
+	unsigned int nextID = m_Map.m_Img_Block.nextID();
 	CVector2D createPosition(200.0f + 80.0f * start.x, 200.0f + 80.0f * start.y);
-	m_Img_Block.Add(new CM_Img_Block(m_Group, createPosition));
-	m_AddList.push_back(start);
+	m_Map.m_Img_Block.Add(new CM_Img_Block(m_Map.m_Group, createPosition));
+	m_Map.m_AddList.push_back(start);
 
 	switch (back)
 	{
 	case 0: //ã
-		m_Img_Block(nextID).m_Down = 1;
+		m_Map.m_Img_Block(nextID).m_Down = 1;
 		break;
 
 	case 1: //‰º
-		m_Img_Block(nextID).m_Up = 1;
+		m_Map.m_Img_Block(nextID).m_Up = 1;
 		break;
 
 	case 2: //¶
-		m_Img_Block(nextID).m_Right = 1;
+		m_Map.m_Img_Block(nextID).m_Right = 1;
 		break;
 
 	case 3: //‰E
-		m_Img_Block(nextID).m_Left = 1;
+		m_Map.m_Img_Block(nextID).m_Left = 1;
 		break;
 	}
 
-	if (m_Img_Block(nextID).m_Up == -1 && std::rand() % 4 == 0)
+	if (m_Map.m_Img_Block(nextID).m_Up == -1 && std::rand() % 5 == 0)
 	{
 		CreateBlock(start + CVector2D(0, -1), 0);
-		m_Img_Block(nextID).m_Up = 1;
+		m_Map.m_Img_Block(nextID).m_Up = 1;
 	}
-	else m_Img_Block(nextID).m_Up = 0;
+	else m_Map.m_Img_Block(nextID).m_Up = 0;
 
-	if (m_Img_Block(nextID).m_Down == -1 && std::rand() % 4 == 0)
+	if (m_Map.m_Img_Block(nextID).m_Down == -1 && std::rand() % 5 == 0)
 	{
 		CreateBlock(start + CVector2D(0, 1), 1);
-		m_Img_Block(nextID).m_Down = 1;
+		m_Map.m_Img_Block(nextID).m_Down = 1;
 	}
-	else m_Img_Block(nextID).m_Down = 0;
+	else m_Map.m_Img_Block(nextID).m_Down = 0;
 
-	if (m_Img_Block(nextID).m_Left == -1 && std::rand() % 4 == 0)
+	if (m_Map.m_Img_Block(nextID).m_Left == -1 && std::rand() % 5 == 0)
 	{
 		CreateBlock(start + CVector2D(-1, 0), 2);
-		m_Img_Block(nextID).m_Left = 1;
+		m_Map.m_Img_Block(nextID).m_Left = 1;
 	}
-	else m_Img_Block(nextID).m_Left = 0;
+	else m_Map.m_Img_Block(nextID).m_Left = 0;
 
-	if (m_Img_Block(nextID).m_Right == -1 && std::rand() % 4 == 0)
+	if (m_Map.m_Img_Block(nextID).m_Right == -1 && std::rand() % 5 == 0)
 	{
 		CreateBlock(start + CVector2D(1, 0), 3);
-		m_Img_Block(nextID).m_Right = 1;
+		m_Map.m_Img_Block(nextID).m_Right = 1;
 	}
-	else m_Img_Block(nextID).m_Right = 0;
+	else m_Map.m_Img_Block(nextID).m_Right = 0;
 }
 
 void CM_Sys_MapGenerator::CrashBlock(int group)
 {
-
+	for (unsigned int i = 0; i < m_Map.m_Img_Block.size(); i++)
+	{
+		if (group == m_Map.m_Img_Block[i].m_Group)
+		{
+			m_Map.m_Img_Block.Clear(i);
+			i = -1;
+		}
+	}
 }
 
 void CM_Sys_MapGenerator::Update()

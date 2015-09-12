@@ -37,7 +37,7 @@ void CM_Img_Block::Update()
 
 void CM_Img_Block::Draw()
 {
-	//m_Debug.Draw(static_cast<int>(m_Image.getPos().x), static_cast<int>(m_Image.getPos().y), m_Color.x, m_Color.y, m_Color.z, "Åú");
+	m_Debug.Draw(static_cast<int>(m_Image.getPos().x), static_cast<int>(m_Image.getPos().y), m_Color.x, m_Color.y, m_Color.z, "Åú");
 
-	m_Image.Draw();
+	//m_Image.Draw();
 }
