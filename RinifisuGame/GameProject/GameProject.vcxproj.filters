@@ -64,6 +64,9 @@
     <ClCompile Include="main.cpp">
       <Filter>ソースファイル</Filter>
     </ClCompile>
+    <ClCompile Include="CM_Img_Number.cpp">
+      <Filter>ソースファイル\MainGame</Filter>
+    </ClCompile>
     <ClCompile Include="CM_ParameterSystem.cpp">
       <Filter>ソースファイル\MainGame</Filter>
     </ClCompile>
@@ -138,6 +141,9 @@
     </ClInclude>
     <ClInclude Include="CGlobal.h">
       <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CM_Img_Number.h">
+      <Filter>ヘッダーファイル\MainGame</Filter>
     </ClInclude>
     <ClInclude Include="CM_ParameterSystem.h">
       <Filter>ヘッダーファイル\MainGame</Filter>

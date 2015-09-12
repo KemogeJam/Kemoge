@@ -20,6 +20,8 @@ ESceneChange CMainGame::Update()
 	case EGameScene::Create:
 		m_Sys_Map = new CM_Sys_MapGenerator(10, 20);
 
+		//m_Img_Num = new CM_Img_Number( );
+
 		m_Scene = EGameScene::Wait;
 		break;
 
