@@ -23,7 +23,7 @@ public:
 	//@1 Ú‘±•”
 
 public:
-	CM_Img_Block(const int group, const CVector2D position);
+	CM_Img_Block(const int group, const CVector2D position, const int item = 0);
 
 protected:
 	void Update();
