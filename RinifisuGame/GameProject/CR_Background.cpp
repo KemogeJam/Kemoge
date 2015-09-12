@@ -2,7 +2,7 @@
 
 CR_Background::CR_Background()
 	: GameTask({ BIND(CR_Background::Update) }, 0, 0)
-	, m_Image(CGlobal::Get_Image("Test"))
+	, m_Image(CGlobal::Get_Image("Title\\background", "Test"))
 {
 
 }

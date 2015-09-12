@@ -2,7 +2,7 @@
 
 CTU_Background::CTU_Background()
 	: GameTask({ BIND(CTU_Background::Update) }, 0, 0)
-	, m_Image(CGlobal::Get_Image("Test"))
+	, m_Image(CGlobal::Get_Image("Title\\background", "Test"))
 {
 
 }

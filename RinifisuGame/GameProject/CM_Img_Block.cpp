@@ -3,7 +3,7 @@
 CM_Img_Block::CM_Img_Block(const int group, const CVector2D position)
 	: GameTask({ BIND(CM_Img_Block::Update) }, (int)EPriority::CM_Img_Block, (int)EPriority::CM_Img_Block)
 
-	, m_Image(CGlobal::Get_Image("Test"))
+	, m_Image(CGlobal::Get_Image("MainGame", "Test"))
 	, m_Up(-1), m_Down(-1), m_Left(-1), m_Right(-1)
 
 	, m_Group(group)
@@ -37,5 +37,7 @@ void CM_Img_Block::Update()
 
 void CM_Img_Block::Draw()
 {
-	m_Debug.Draw(m_Image.getPos().x, m_Image.getPos().y, m_Color.x, m_Color.y, m_Color.z, "Åú");
+	//m_Debug.Draw(static_cast<int>(m_Image.getPos().x), static_cast<int>(m_Image.getPos().y), m_Color.x, m_Color.y, m_Color.z, "Åú");
+
+	m_Image.Draw();
 }
