@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:580ebee986cb2eca769d423b08df9b13:0cd8a62b7a72d250e82e1f678be04693:586ac546036436bcd685a5db35538815$ -->
+<TextureAtlas imagePath="background.png" width="1280" height="960">
+    <SubTexture name="Test" x="0" y="0" width="1280" height="960" frameX="0" frameY="0" frameWidth="1280" frameHeight="960"/>
+</TextureAtlas>

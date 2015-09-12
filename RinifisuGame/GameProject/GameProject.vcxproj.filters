@@ -31,6 +31,12 @@
     <Filter Include="ヘッダー ファイル\Title">
       <UniqueIdentifier>{c33cdade-5b3e-4d26-a201-e5347a7179e2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ヘッダー ファイル\Tutorial">
+      <UniqueIdentifier>{1933f6cf-4c1b-46ee-b7c6-bd1bb337d7c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Tutorial">
+      <UniqueIdentifier>{47bfc12d-5d7f-4067-902e-e58d59dc3c09}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -72,6 +78,12 @@
     <ClCompile Include="CTI_Background.cpp">
       <Filter>ソース ファイル\Title</Filter>
     </ClCompile>
+    <ClCompile Include="CTU_Background.cpp">
+      <Filter>ソース ファイル\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="CTutorial.cpp">
+      <Filter>ソース ファイル\Tutorial</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Easing.h">
@@ -112,6 +124,12 @@
     </ClInclude>
     <ClInclude Include="CTI_Background.h">
       <Filter>ヘッダー ファイル\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="CTutorial.h">
+      <Filter>ヘッダー ファイル\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="CTU_Background.h">
+      <Filter>ヘッダー ファイル\Tutorial</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
