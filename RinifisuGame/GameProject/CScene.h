@@ -4,6 +4,7 @@ enum class ESceneChange
 {
 	None,
 	Title,
+	Tutorial,
 	Main
 };
 

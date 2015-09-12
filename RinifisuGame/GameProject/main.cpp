@@ -8,6 +8,7 @@
 
 #include "CMainGame.h"
 #include "CTitle.h"
+#include "CTutorial.h"
 
 CScene* g_Scene = new CScene();
 
@@ -59,6 +60,11 @@ void Display(void) {
 	case ESceneChange::Title:
 		delete g_Scene;
 		g_Scene = new CTitle();
+		break;
+
+	case ESceneChange::Tutorial:
+		delete g_Scene;
+		g_Scene = new (CTutorial);
 		break;
 	}
 }

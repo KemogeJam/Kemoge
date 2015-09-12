@@ -16,5 +16,5 @@ void CTI_Background::Draw()
 	m_Image.Draw();
 	m_Image.getPos().x = 100;
 	m_Image.getPos().y = 100;
-	m_Font.Draw(10, 700, 0.0f, 0.0f, 0.0f, "テスト");
+	m_Font.Draw(10, 700, 0.0f, 0.0f, 0.0f, "ミスターモグラー");
 }

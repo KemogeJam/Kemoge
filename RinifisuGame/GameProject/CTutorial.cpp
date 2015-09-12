@@ -1,30 +1,30 @@
-#include "CTitle.h"
+#include "CTutorial.h"
 
-CTitle::CTitle()
-	: m_Scene(ETitleScene::Create)
+CTutorial::CTutorial()
+	: m_Scene(ETutorialScene::Create)
 {
 	//アセットの初期化
-	CGlobal::Load_Image("Title\\background");
+	CGlobal::Load_Image("Tutorial\\background");
 }
 
-CTitle::~CTitle()
+CTutorial::~CTutorial()
 {
 
 }
 
-ESceneChange CTitle::Update()
+ESceneChange CTutorial::Update()
 {
 	//シーンで分岐
 	switch (m_Scene)
 	{
-	case ETitleScene::Create:
-		m_Background = new CTI_Background();
-		m_Scene = ETitleScene::Wait;
+	case ETutorialScene::Create:
+		m_Background = new CTU_Background();
+		m_Scene = ETutorialScene::Wait;
 		break;
 
 		//----------------------------------------------------------------------------------------------------------//
 
-	case ETitleScene::Wait:
+	case ETutorialScene::Wait:
 
 		break;
 
@@ -36,8 +36,8 @@ ESceneChange CTitle::Update()
 	}
 
 	//スペースキーを押すとシーン移動する
-	if(CInput::GetState(0, CInput::ePush, CInput::eButton1)) {
-		return ESceneChange::Tutorial;
+	if (CInput::GetState(0, CInput::ePush, CInput::eButton1)) {
+		return ESceneChange::Main;
 	}
 
 	//正常終了
