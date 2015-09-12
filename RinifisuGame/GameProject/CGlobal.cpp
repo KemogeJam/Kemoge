@@ -3,6 +3,8 @@
 std::map<std::string, CImage>			CGlobal::m_Image;
 std::map<std::string, TexturePacker>	CGlobal::m_Rect;
 
+float CGlobal::m_Camera;
+
 void CGlobal::Load_Image(std::string path)
 {
 	//‰æ‘œ‚Ì“Ç‚İ‚İ

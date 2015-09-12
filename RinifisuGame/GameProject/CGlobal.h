@@ -10,6 +10,8 @@ private:
 	static std::map<std::string, CImage>		m_Image;	//画像
 	static std::map<std::string, TexturePacker>	m_Rect;		//画像範囲
 
+	static float								m_Camera;	//カメラの位置
+
 public:
 	static void Load_Image(std::string path);			//画像と画像範囲データの読み込み
 	static void Release_Image(std::string path);			//画像と画像範囲データの解放
