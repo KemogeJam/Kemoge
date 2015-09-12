@@ -18,7 +18,7 @@ ESceneChange CMainGame::Update()
 	switch (m_Scene)
 	{
 	case EGameScene::Create:
-		m_Img_Text = new CM_Img_Test();
+		m_Sys_Map = new CM_Sys_MapGenerator(10, 20);
 
 		m_Scene = EGameScene::Wait;
 		break;

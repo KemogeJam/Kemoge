@@ -60,6 +60,12 @@
     <ClCompile Include="CGlobal.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="CM_Img_Block.cpp">
+      <Filter>ソース ファイル\MainGame</Filter>
+    </ClCompile>
+    <ClCompile Include="CM_Sys_MapGenerator.cpp">
+      <Filter>ソース ファイル\MainGame</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Easing.h">
@@ -94,6 +100,12 @@
     </ClInclude>
     <ClInclude Include="CGlobal.h">
       <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CM_Img_Block.h">
+      <Filter>ヘッダー ファイル\MainGame</Filter>
+    </ClInclude>
+    <ClInclude Include="CM_Sys_MapGenerator.h">
+      <Filter>ヘッダー ファイル\MainGame</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

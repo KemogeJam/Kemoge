@@ -21,6 +21,9 @@ enum class EPriority
 {
 	//MainGame
 	CM_Img_Test = 0,
+	CM_Sys_MapGenerator,
+
+	CM_Img_Block,
 
 	//‚»‚Ì‘¼
 };
