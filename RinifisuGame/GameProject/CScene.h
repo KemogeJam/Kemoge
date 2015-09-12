@@ -3,7 +3,8 @@
 enum class ESceneChange
 {
 	None,
-	Main,
+	Title,
+	Main
 };
 
 class CScene

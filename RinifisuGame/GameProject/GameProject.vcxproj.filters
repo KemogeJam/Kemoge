@@ -25,6 +25,12 @@
     <Filter Include="ヘッダー ファイル\MainGame">
       <UniqueIdentifier>{54308c0b-5c95-4f1e-910e-03bc06a1602e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Title">
+      <UniqueIdentifier>{0ea81575-c4e7-46fa-ba1e-5c0ff107dd8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Title">
+      <UniqueIdentifier>{c33cdade-5b3e-4d26-a201-e5347a7179e2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -60,6 +66,12 @@
     <ClCompile Include="CGlobal.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="CTitle.cpp">
+      <Filter>ソース ファイル\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="CTI_Background.cpp">
+      <Filter>ソース ファイル\Title</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Easing.h">
@@ -94,6 +106,12 @@
     </ClInclude>
     <ClInclude Include="CGlobal.h">
       <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CTitle.h">
+      <Filter>ヘッダー ファイル\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="CTI_Background.h">
+      <Filter>ヘッダー ファイル\Title</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
