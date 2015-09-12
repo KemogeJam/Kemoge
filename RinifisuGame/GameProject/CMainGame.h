@@ -7,6 +7,7 @@
 #include "CM_Img_Test.h"
 
 #include "CM_Sys_MapGenerator.h"
+#include "CM_Img_Number.h"
 
 enum class EGameScene
 {
@@ -21,6 +22,7 @@ private:
 
 private:
 	GameTaskPointer<CM_Sys_MapGenerator> m_Sys_Map;
+	GameTaskPointer<CM_Img_Number> m_Img_Num;
 
 public:
 	CMainGame();

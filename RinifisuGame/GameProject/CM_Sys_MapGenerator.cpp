@@ -110,5 +110,8 @@ void CM_Sys_MapGenerator::CrashBlock(int group)
 
 void CM_Sys_MapGenerator::Update()
 {
+	if (CInput::GetState(0, CInput::eHold, CInput::eMouseL))
+	CGlobal::m_Camera += CInput::getMouseVec().y;
 
+	m_Debug.Draw(10, 700, 0.0f, 0.0f, 0.0f, const_cast<char*>(std::to_string(CGlobal::m_Camera / 80.0f).c_str()));
 }

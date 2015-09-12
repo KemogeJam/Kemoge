@@ -3,7 +3,7 @@
 std::map<std::string, CImage>			CGlobal::m_Image;
 std::map<std::string, TexturePacker>	CGlobal::m_Rect;
 
-float CGlobal::m_Camera;
+float CGlobal::m_Camera = 0.0f;
 
 void CGlobal::Load_Image(std::string path)
 {
@@ -29,4 +29,21 @@ const CImage & CGlobal::Get_Image(std::string path, std::string name)
 	m_Image[path].setSize(static_cast<float>(rect.w), static_cast<float>(rect.h));
 
 	return m_Image[path];
+}
+
+const TextureRect & CGlobal::Get_Rect(std::string path, std::string name)
+{
+	return m_Rect[path][name];
+}
+
+const std::vector<TextureRect> & CGlobal::GetArray_Rect(std::string path, std::vector<std::string> name)
+{
+	std::vector<TextureRect> returnRect;
+
+	for (int i = 0; i < name.size(); ++i)
+	{
+		returnRect.push_back(m_Rect[path][name[i]]);
+	}
+
+	return returnRect;
 }
