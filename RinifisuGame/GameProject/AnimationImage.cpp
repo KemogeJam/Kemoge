@@ -2,7 +2,6 @@
 
 AnimationImage::AnimationImage()
 	: GameTask({ BIND(AnimationImage::Update) }, 0, 0)
-	, m_Image(CGlobal::Get_Image("", "Test"))
 {
 
 }
