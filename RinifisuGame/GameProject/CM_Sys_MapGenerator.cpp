@@ -1,9 +1,6 @@
 #include "CM_Sys_MapGenerator.h"
 
-CM_Sys_MapGenerator::CM_Sys_MapGenerator(const int level, const int depth)
-	: GameTask({ BIND(CM_Sys_MapGenerator::Update) }, (int)EPriority::CM_Sys_MapGenerator)
-
-	, m_Map({level, 0})
+CM_Sys_MapGenerator::CM_Sys_MapGenerator(const int level, const int depth) : m_Map({level, 0})
 {
 	//ê[Ç≥ï™ÇæÇØê∂ê¨Ç∑ÇÈ
 	for (int l_Depth = 0; l_Depth < depth; ++l_Depth)
@@ -113,22 +110,7 @@ void CM_Sys_MapGenerator::CreateBlock(CVector2D start, const int back)
 	else m_Map.m_Img_Block(nextID).m_Right = 0;
 }
 
-void CM_Sys_MapGenerator::CrashBlock(int group)
+SM_Sys_MapData CM_Sys_MapGenerator::GetData()
 {
-	for (unsigned int i = 0; i < m_Map.m_Img_Block.size(); i++)
-	{
-		if (group == m_Map.m_Img_Block[i].m_Group)
-		{
-			m_Map.m_Img_Block.Clear(i);
-			i = -1;
-		}
-	}
-}
-
-void CM_Sys_MapGenerator::Update()
-{
-	if (CInput::GetState(0, CInput::eHold, CInput::eMouseL))
-	CGlobal::m_Camera += CInput::getMouseVec().y;
-
-	m_Debug.Draw(10, 700, 0.0f, 0.0f, 0.0f, const_cast<char*>(std::to_string(CGlobal::m_Camera / 80.0f).c_str()));
+	return m_Map;
 }

@@ -73,6 +73,12 @@
     <ClCompile Include="CM_View_State.cpp">
       <Filter>ソースファイル\MainGame</Filter>
     </ClCompile>
+    <ClCompile Include="CM_Img_GameMap.cpp">
+      <Filter>ソースファイル\MainGame</Filter>
+    </ClCompile>
+    <ClCompile Include="CM_Img_Player.cpp">
+      <Filter>ソースファイル\MainGame</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
@@ -157,7 +163,10 @@
     <ClInclude Include="StageParameter.h">
       <Filter>ヘッダーファイル\MainGame</Filter>
     </ClInclude>
-    <ClInclude Include="CM_View_State.h">
+    <ClInclude Include="CM_Img_GameMap.h">
+      <Filter>ヘッダーファイル\MainGame</Filter>
+    </ClInclude>
+    <ClInclude Include="CM_Img_Player.h">
       <Filter>ヘッダーファイル\MainGame</Filter>
     </ClInclude>
   </ItemGroup>
