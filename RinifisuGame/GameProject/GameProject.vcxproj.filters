@@ -3,6 +3,64 @@
   <ItemGroup>
     <ClCompile Include="CM_Img_Block.cpp">
       <Filter>ソースコード\MainGame</Filter>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\System">
+      <UniqueIdentifier>{76d13d93-842a-4f42-8949-39eb525156dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\System">
+      <UniqueIdentifier>{4342b3ba-dbfa-4ecc-b4e1-cd2e26ebcf43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\MainGame">
+      <UniqueIdentifier>{a64ddfd5-3076-40f1-8a95-428772a876b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\MainGame">
+      <UniqueIdentifier>{54308c0b-5c95-4f1e-910e-03bc06a1602e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Title">
+      <UniqueIdentifier>{0ea81575-c4e7-46fa-ba1e-5c0ff107dd8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Title">
+      <UniqueIdentifier>{c33cdade-5b3e-4d26-a201-e5347a7179e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Tutorial">
+      <UniqueIdentifier>{1933f6cf-4c1b-46ee-b7c6-bd1bb337d7c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Tutorial">
+      <UniqueIdentifier>{47bfc12d-5d7f-4067-902e-e58d59dc3c09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Result">
+      <UniqueIdentifier>{563689d0-6bfc-41b4-9d4a-d1e13a231b01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Result">
+      <UniqueIdentifier>{52c2bb18-b4dd-4787-8321-1bc2d9323fe4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Animation">
+      <UniqueIdentifier>{50b97198-931f-4cfb-be52-828202e985ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Animation">
+      <UniqueIdentifier>{a004a3f5-9f60-4fa1-a324-01645e2fcd3d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Easing.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="EasingManager.cpp">
+      <Filter>ソース ファイル\System</Filter>
     </ClCompile>
     <ClCompile Include="CM_Img_Test.cpp">
       <Filter>ソースコード\MainGame</Filter>
@@ -57,6 +115,12 @@
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>ソースコード</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationImage.cpp">
+      <Filter>ソース ファイル\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="CharacterImage.cpp">
+      <Filter>ソース ファイル\MainGame</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -122,6 +186,15 @@
     </ClInclude>
     <ClInclude Include="Include.h">
       <Filter>ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationImage.h">
+      <Filter>ヘッダー ファイル\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationDetail.h">
+      <Filter>ヘッダー ファイル\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterImage.h">
+      <Filter>ヘッダー ファイル\MainGame</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
