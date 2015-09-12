@@ -8,8 +8,14 @@ private:
 
 public:
 	enum EAnimationId {
-		E_Idle = 0,
-		E_Walk = 1,
+		E_IdleLeft = 0,
+		E_IdleRight = 1,
+		E_DigLeft = 2,
+		E_DigRight = 3,
+		E_DigDown = 4,
+		E_DigUp = 5,
+		E_WalkLeft = 6,
+		E_WalkRight = 7
 	};
 
 	CharacterImage();
