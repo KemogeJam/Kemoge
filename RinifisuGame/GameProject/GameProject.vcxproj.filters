@@ -1,163 +1,79 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="CM_Img_Block.cpp">
-      <Filter>ソースコード\MainGame</Filter>
-    <Filter Include="ソース ファイル">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="ヘッダー ファイル">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
-    <Filter Include="リソース ファイル">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="ソース ファイル\System">
-      <UniqueIdentifier>{76d13d93-842a-4f42-8949-39eb525156dd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\System">
-      <UniqueIdentifier>{4342b3ba-dbfa-4ecc-b4e1-cd2e26ebcf43}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\MainGame">
-      <UniqueIdentifier>{a64ddfd5-3076-40f1-8a95-428772a876b9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\MainGame">
-      <UniqueIdentifier>{54308c0b-5c95-4f1e-910e-03bc06a1602e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Title">
-      <UniqueIdentifier>{0ea81575-c4e7-46fa-ba1e-5c0ff107dd8d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Title">
-      <UniqueIdentifier>{c33cdade-5b3e-4d26-a201-e5347a7179e2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Tutorial">
-      <UniqueIdentifier>{1933f6cf-4c1b-46ee-b7c6-bd1bb337d7c3}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Tutorial">
-      <UniqueIdentifier>{47bfc12d-5d7f-4067-902e-e58d59dc3c09}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Result">
-      <UniqueIdentifier>{563689d0-6bfc-41b4-9d4a-d1e13a231b01}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Result">
-      <UniqueIdentifier>{52c2bb18-b4dd-4787-8321-1bc2d9323fe4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダー ファイル\Animation">
-      <UniqueIdentifier>{50b97198-931f-4cfb-be52-828202e985ef}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Animation">
-      <UniqueIdentifier>{a004a3f5-9f60-4fa1-a324-01645e2fcd3d}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="Easing.cpp">
-      <Filter>ソース ファイル\System</Filter>
-    </ClCompile>
-    <ClCompile Include="EasingManager.cpp">
-      <Filter>ソース ファイル\System</Filter>
-    </ClCompile>
-    <ClCompile Include="CM_Img_Test.cpp">
-      <Filter>ソースコード\MainGame</Filter>
-    </ClCompile>
-    <ClCompile Include="CM_Sys_MapGenerator.cpp">
-      <Filter>ソースコード\MainGame</Filter>
-    </ClCompile>
-    <ClCompile Include="CMainGame.cpp">
-      <Filter>ソースコード\MainGame</Filter>
-    </ClCompile>
-    <ClCompile Include="CGlobal.cpp">
-      <Filter>ソースコード</Filter>
-    </ClCompile>
-    <ClCompile Include="CR_Background.cpp">
-      <Filter>ソースコード\Result</Filter>
-    </ClCompile>
-    <ClCompile Include="CResult.cpp">
-      <Filter>ソースコード\Result</Filter>
-    </ClCompile>
-    <ClCompile Include="CTI_Background.cpp">
-      <Filter>ソースコード\Title</Filter>
-    </ClCompile>
-    <ClCompile Include="CTitle.cpp">
-      <Filter>ソースコード\Title</Filter>
-    </ClCompile>
-    <ClCompile Include="CTU_Background.cpp">
-      <Filter>ソースコード\Tutorial</Filter>
-    </ClCompile>
-    <ClCompile Include="CTutorial.cpp">
-      <Filter>ソースコード\Tutorial</Filter>
-    </ClCompile>
-    <ClCompile Include="CScene.cpp">
-      <Filter>ソースコード\System</Filter>
-    </ClCompile>
-    <ClCompile Include="Easing.cpp">
-      <Filter>ソースコード\System</Filter>
-    </ClCompile>
-    <ClCompile Include="EasingManager.cpp">
-      <Filter>ソースコード\System</Filter>
-    </ClCompile>
-    <ClCompile Include="GameTask.cpp">
-      <Filter>ソースコード\System</Filter>
-    </ClCompile>
-    <ClCompile Include="Stopwatch.cpp">
-      <Filter>ソースコード\System</Filter>
-    </ClCompile>
-    <ClCompile Include="TextManager.cpp">
-      <Filter>ソースコード\System</Filter>
-    </ClCompile>
     <ClCompile Include="TexturePacker.cpp">
-      <Filter>ソースコード\System</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>ソースコード</Filter>
+      <Filter>ソースファイル\System</Filter>
     </ClCompile>
     <ClCompile Include="AnimationImage.cpp">
-      <Filter>ソース ファイル\Animation</Filter>
+      <Filter>ソースファイル\System</Filter>
     </ClCompile>
     <ClCompile Include="CharacterImage.cpp">
-      <Filter>ソース ファイル\MainGame</Filter>
+      <Filter>ソースファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Easing.cpp">
+      <Filter>ソースファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="EasingManager.cpp">
+      <Filter>ソースファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="GameTask.cpp">
+      <Filter>ソースファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Stopwatch.cpp">
+      <Filter>ソースファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="TextManager.cpp">
+      <Filter>ソースファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="CM_Img_Block.cpp">
+      <Filter>ソースファイル\MainGame</Filter>
+    </ClCompile>
+    <ClCompile Include="CM_Img_Test.cpp">
+      <Filter>ソースファイル\MainGame</Filter>
+    </ClCompile>
+    <ClCompile Include="CM_Sys_MapGenerator.cpp">
+      <Filter>ソースファイル\MainGame</Filter>
+    </ClCompile>
+    <ClCompile Include="CMainGame.cpp">
+      <Filter>ソースファイル\MainGame</Filter>
+    </ClCompile>
+    <ClCompile Include="CResult.cpp">
+      <Filter>ソースファイル\Result</Filter>
+    </ClCompile>
+    <ClCompile Include="CR_Background.cpp">
+      <Filter>ソースファイル\Result</Filter>
+    </ClCompile>
+    <ClCompile Include="CScene.cpp">
+      <Filter>ソースファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="CTitle.cpp">
+      <Filter>ソースファイル\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="CTI_Background.cpp">
+      <Filter>ソースファイル\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="CTutorial.cpp">
+      <Filter>ヘッダーファイル\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="CTU_Background.cpp">
+      <Filter>ソースファイル\Tutorial</Filter>
+    </ClCompile>
+    <ClCompile Include="CGlobal.cpp">
+      <Filter>ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>ソースファイル</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CM_Img_Block.h">
-      <Filter>ヘッダーファイル\MainGame</Filter>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="AnimationDetail.h">
+      <Filter>ヘッダーファイル\System</Filter>
     </ClInclude>
-    <ClInclude Include="CM_Img_Test.h">
-      <Filter>ヘッダーファイル\MainGame</Filter>
+    <ClInclude Include="AnimationImage.h">
+      <Filter>ヘッダーファイル\System</Filter>
     </ClInclude>
-    <ClInclude Include="CM_Sys_MapGenerator.h">
-      <Filter>ヘッダーファイル\MainGame</Filter>
-    </ClInclude>
-    <ClInclude Include="CMainGame.h">
-      <Filter>ヘッダーファイル\MainGame</Filter>
-    </ClInclude>
-    <ClInclude Include="CGlobal.h">
-      <Filter>ヘッダーファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="CR_Background.h">
-      <Filter>ヘッダーファイル\Result</Filter>
-    </ClInclude>
-    <ClInclude Include="CResult.h">
-      <Filter>ヘッダーファイル\Result</Filter>
-    </ClInclude>
-    <ClInclude Include="CTI_Background.h">
-      <Filter>ヘッダーファイル\Title</Filter>
-    </ClInclude>
-    <ClInclude Include="CTitle.h">
-      <Filter>ヘッダーファイル\Title</Filter>
-    </ClInclude>
-    <ClInclude Include="CTU_Background.h">
-      <Filter>ヘッダーファイル\Tutorial</Filter>
-    </ClInclude>
-    <ClInclude Include="CTutorial.h">
-      <Filter>ヘッダーファイル\Tutorial</Filter>
-    </ClInclude>
-    <ClInclude Include="CScene.h">
+    <ClInclude Include="CharacterImage.h">
       <Filter>ヘッダーファイル\System</Filter>
     </ClInclude>
     <ClInclude Include="Easing.h">
@@ -178,61 +94,85 @@
     <ClInclude Include="TexturePacker.h">
       <Filter>ヘッダーファイル\System</Filter>
     </ClInclude>
-    <ClInclude Include="SM_Sys_MapData.h">
+    <ClInclude Include="CMainGame.h">
       <Filter>ヘッダーファイル\MainGame</Filter>
     </ClInclude>
-    <ClInclude Include="resource.h">
-      <Filter>ヘッダーファイル</Filter>
+    <ClInclude Include="CM_Img_Block.h">
+      <Filter>ヘッダーファイル\MainGame</Filter>
+    </ClInclude>
+    <ClInclude Include="CM_Img_Test.h">
+      <Filter>ヘッダーファイル\MainGame</Filter>
+    </ClInclude>
+    <ClInclude Include="CM_Sys_MapGenerator.h">
+      <Filter>ヘッダーファイル\MainGame</Filter>
+    </ClInclude>
+    <ClInclude Include="CR_Background.h">
+      <Filter>ヘッダーファイル\Result</Filter>
+    </ClInclude>
+    <ClInclude Include="CResult.h">
+      <Filter>ヘッダーファイル\Result</Filter>
+    </ClInclude>
+    <ClInclude Include="CScene.h">
+      <Filter>ヘッダーファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="CTI_Background.h">
+      <Filter>ヘッダーファイル\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="CTitle.h">
+      <Filter>ヘッダーファイル\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="CTU_Background.h">
+      <Filter>ヘッダーファイル\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="CTutorial.h">
+      <Filter>ヘッダーファイル\Tutorial</Filter>
+    </ClInclude>
+    <ClInclude Include="SM_Sys_MapData.h">
+      <Filter>ヘッダーファイル\MainGame</Filter>
     </ClInclude>
     <ClInclude Include="Include.h">
       <Filter>ヘッダーファイル</Filter>
     </ClInclude>
-    <ClInclude Include="AnimationImage.h">
-      <Filter>ヘッダー ファイル\Animation</Filter>
-    </ClInclude>
-    <ClInclude Include="AnimationDetail.h">
-      <Filter>ヘッダー ファイル\Animation</Filter>
-    </ClInclude>
-    <ClInclude Include="CharacterImage.h">
-      <Filter>ヘッダー ファイル\MainGame</Filter>
+    <ClInclude Include="CGlobal.h">
+      <Filter>ヘッダーファイル</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="ヘッダーファイル">
-      <UniqueIdentifier>{374e0cc3-4b8f-4d82-94df-6bfdcb526310}</UniqueIdentifier>
+      <UniqueIdentifier>{b28a1589-19ed-4c2e-896b-9b9256d970c7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソースコード">
-      <UniqueIdentifier>{8c9cc0f7-49e0-45d8-8453-7f7047c9dbe5}</UniqueIdentifier>
+    <Filter Include="ソースファイル">
+      <UniqueIdentifier>{5f4464e8-d9e3-4f93-9840-f7dcd1db9f40}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソースコード\MainGame">
-      <UniqueIdentifier>{586d4f5e-859a-42c1-a8a6-9e64ea728579}</UniqueIdentifier>
+    <Filter Include="ソースファイル\MainGame">
+      <UniqueIdentifier>{3a16b73e-07b9-42b6-afc3-22252ac7e301}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソースファイル\Result">
+      <UniqueIdentifier>{48acf2b4-6405-4c9d-9512-e0b89722e29b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソースファイル\Title">
+      <UniqueIdentifier>{b288a5b3-e31c-4a6e-8c07-a917a1c4908d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソースファイル\Tutorial">
+      <UniqueIdentifier>{456dd4e4-cacd-4e67-b37e-c6afbe2687a7}</UniqueIdentifier>
     </Filter>
     <Filter Include="ヘッダーファイル\MainGame">
-      <UniqueIdentifier>{4edc2b5f-9667-414f-9c84-d8a00643dcb5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダーファイル\Title">
-      <UniqueIdentifier>{ebc38ec9-4cfc-4ef2-951c-f6448255b590}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダーファイル\Result">
-      <UniqueIdentifier>{37593760-27d2-472f-8cb3-3762fd425930}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソースコード\Title">
-      <UniqueIdentifier>{d3584838-eafe-46f9-999c-29649ad17a57}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソースコード\Result">
-      <UniqueIdentifier>{b23e53d5-5a2d-42d7-a5c8-83f6f1eda6ba}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ヘッダーファイル\System">
-      <UniqueIdentifier>{aed8e24b-a4a9-4703-a281-db31c6b8e3e4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソースコード\System">
-      <UniqueIdentifier>{effd6a6b-d5bb-442a-b3f0-f24a867e124c}</UniqueIdentifier>
+      <UniqueIdentifier>{1d1c3139-a1e3-4d1c-9f72-c0f85380d1fc}</UniqueIdentifier>
     </Filter>
     <Filter Include="ヘッダーファイル\Tutorial">
-      <UniqueIdentifier>{abf5b402-4d57-4e87-83d0-46405cc29282}</UniqueIdentifier>
+      <UniqueIdentifier>{39447dcb-9c92-4afe-8458-ed9df3d42d1e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソースコード\Tutorial">
-      <UniqueIdentifier>{11c3b970-b648-49f9-b051-517ffa579428}</UniqueIdentifier>
+    <Filter Include="ヘッダーファイル\Title">
+      <UniqueIdentifier>{574d7159-2a44-49f9-89b8-7f1db8be1180}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダーファイル\Result">
+      <UniqueIdentifier>{044ead95-240b-4150-b143-d9cdfc35b4d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダーファイル\System">
+      <UniqueIdentifier>{1ea8a841-17b7-4dd0-8f42-a866640304b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソースファイル\System">
+      <UniqueIdentifier>{843f5551-752e-4edf-b5fd-952bb6b0f175}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
