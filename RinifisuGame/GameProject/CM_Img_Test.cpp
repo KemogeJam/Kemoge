@@ -2,7 +2,7 @@
 
 CM_Img_Test::CM_Img_Test()
 	: GameTask({ BIND(CM_Img_Test::Update) }, (int)EPriority::CM_Img_Test, (int)EPriority::CM_Img_Test)
-	, m_Image(CGlobal::Get_Image("Test"))
+	, m_Image(CGlobal::Get_Image("MainGame", "Test"))
 {
 
 }

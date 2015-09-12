@@ -101,6 +101,11 @@
     </ClCompile>
     <ClCompile Include="CR_Background.cpp">
       <Filter>ソース ファイル\Result</Filter>
+    <ClCompile Include="CM_Img_Block.cpp">
+      <Filter>ソース ファイル\MainGame</Filter>
+    </ClCompile>
+    <ClCompile Include="CM_Sys_MapGenerator.cpp">
+      <Filter>ソース ファイル\MainGame</Filter>
     </ClCompile>
     <ClCompile Include="AnimationImage.cpp">
       <Filter>ソース ファイル\Animation</Filter>
@@ -175,8 +180,11 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="RinifisuGame.rc">
-      <Filter>リソース ファイル</Filter>
-    </ResourceCompile>
+    <ClInclude Include="CM_Img_Block.h">
+      <Filter>ヘッダー ファイル\MainGame</Filter>
+    </ClInclude>
+    <ClInclude Include="CM_Sys_MapGenerator.h">
+      <Filter>ヘッダー ファイル\MainGame</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

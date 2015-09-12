@@ -1,26 +1,30 @@
 #include "CGlobal.h"
 
-CImage			CGlobal::m_Image;
-TexturePacker	CGlobal::m_Rect;
+std::map<std::string, CImage>			CGlobal::m_Image;
+std::map<std::string, TexturePacker>	CGlobal::m_Rect;
 
 void CGlobal::Load_Image(std::string path)
 {
-	//‰æ‘œ‚ÌŠJ•ú
-	m_Image.Release();
-
 	//‰æ‘œ‚Ì“Ç‚İ‚İ
-	m_Image.Load(const_cast<char *>((path + ".png").c_str()));
+	m_Image[path].Load(const_cast<char *>((path + ".png").c_str()));
 
 	//‰æ‘œ‚ÌˆÊ’uî•ñ‚Ì“Ç‚İ‚İ
-	m_Rect.Load(path + ".xml");
+	m_Rect[path].Load(path + ".xml");
 }
 
-const CImage & CGlobal::Get_Image(std::string name)
+void CGlobal::Release_Image(std::string path)
 {
-	TextureRect rect = m_Rect[name];
+	m_Image[path].Release();
 
-	m_Image.setRect(rect.x, rect.y, rect.x + rect.w, rect.y + rect.h);
-	m_Image.setSize(static_cast<float>(rect.w), static_cast<float>(rect.h));
+	m_Image.erase(path);
+}
 
-	return m_Image;
+const CImage & CGlobal::Get_Image(std::string path, std::string name)
+{
+	TextureRect rect = m_Rect[path][name];
+
+	m_Image[path].setRect(rect.x, rect.y, rect.x + rect.w, rect.y + rect.h);
+	m_Image[path].setSize(static_cast<float>(rect.w), static_cast<float>(rect.h));
+
+	return m_Image[path];
 }
