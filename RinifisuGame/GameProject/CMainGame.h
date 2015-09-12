@@ -7,12 +7,28 @@
 #include "CM_Img_Test.h"
 
 #include "CM_Sys_MapGenerator.h"
+#include "CM_Img_GameMap.h"
 #include "CM_Img_Number.h"
+#include "CM_Img_Player.h"
+
+#include "CM_ParameterSystem.h"
 
 enum class EGameScene
 {
 	Create, //ê∂ê¨
 	Wait,	//ë“ã@
+
+	NewAsset,
+	ShowPlayer,
+	ShowPlayerWait,
+
+	CountDown,
+	CountDownWait,
+
+	GameStart,
+	MainGame,
+
+
 };
 
 class CMainGame : public CScene
@@ -21,8 +37,10 @@ private:
 	EGameScene m_Scene;		//ÉVÅ[ÉìÇÃä«óù
 
 private:
-	GameTaskPointer<CM_Sys_MapGenerator> m_Sys_Map;
-	GameTaskPointer<CM_Img_Number> m_Img_Num;
+	GameTaskPointer<CM_Img_GameMap>			m_Sys_Map;
+	GameTaskPointer<CM_Img_Number>			m_Img_Num;
+	GameTaskPointer<CM_Img_Player>			m_Img_Player;
+	CM_ParameterSystem						m_Sys_Parameter;
 
 public:
 	CMainGame();

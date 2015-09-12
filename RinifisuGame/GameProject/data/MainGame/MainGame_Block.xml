@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:ed665f18d2744d7854e62116621dd964:17fb7ed04237ce8511cd22b1e737cf91:9dfa0827ca8b413683e878fde7b5c68f$ -->
+<TextureAtlas imagePath="MainGame_Block.png" width="470" height="248">
+    <SubTexture name="00000" x="2" y="2" width="80" height="80"/>
+    <SubTexture name="00001" x="2" y="84" width="80" height="80"/>
+    <SubTexture name="0010" x="2" y="166" width="80" height="80"/>
+    <SubTexture name="00100" x="84" y="2" width="80" height="80"/>
+    <SubTexture name="00101" x="84" y="84" width="80" height="80"/>
+    <SubTexture name="00110" x="84" y="166" width="80" height="80"/>
+    <SubTexture name="00111" x="166" y="2" width="80" height="80"/>
+    <SubTexture name="01000" x="166" y="84" width="80" height="80"/>
+    <SubTexture name="01001" x="166" y="166" width="80" height="80"/>
+    <SubTexture name="01010" x="248" y="2" width="80" height="80"/>
+    <SubTexture name="01011" x="330" y="2" width="80" height="80"/>
+    <SubTexture name="01101" x="248" y="84" width="80" height="80"/>
+    <SubTexture name="01110" x="248" y="166" width="80" height="80"/>
+    <SubTexture name="01111" x="330" y="84" width="80" height="80"/>
+    <SubTexture name="ダイア" x="396" y="166" width="72" height="63" frameX="-15" frameY="-36" frameWidth="100" frameHeight="100"/>
+    <SubTexture name="ミミズ" x="330" y="166" width="64" height="69" frameX="-16" frameY="-30" frameWidth="100" frameHeight="100"/>
+</TextureAtlas>
