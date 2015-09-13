@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:065ceb1984833e4f9d96d14efe17ef80:2496daab7745e83482e18699e40d8005:729c0ac38095df9009a3e230a4474fc0$ -->
+<TextureAtlas imagePath="Character.png" width="2500" height="100">
+    <SubTexture name="Img" x="0" y="0" width="2500" height="100"/>
+</TextureAtlas>
