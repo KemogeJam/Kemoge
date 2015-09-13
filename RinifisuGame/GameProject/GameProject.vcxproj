@@ -90,11 +90,13 @@
     <ClCompile Include="CharacterImage.cpp" />
     <ClCompile Include="CMainGame.cpp" />
     <ClCompile Include="CGlobal.cpp" />
+    <ClCompile Include="CM_Background.cpp" />
     <ClCompile Include="CM_Img_Block.cpp" />
     <ClCompile Include="CM_Img_Number.cpp" />
     <ClCompile Include="CM_Img_Player.cpp" />
     <ClCompile Include="CM_Img_Test.cpp" />
     <ClCompile Include="CM_ParameterSystem.cpp" />
+    <ClCompile Include="CM_Spring.cpp" />
     <ClCompile Include="CM_View_State.cpp" />
     <ClCompile Include="CResult.cpp" />
     <ClCompile Include="CR_Background.cpp" />
@@ -120,11 +122,13 @@
     <ClInclude Include="CharacterImage.h" />
     <ClInclude Include="CMainGame.h" />
     <ClInclude Include="CGlobal.h" />
+    <ClInclude Include="CM_Background.h" />
     <ClInclude Include="CM_Img_Block.h" />
     <ClInclude Include="CM_Img_Number.h" />
     <ClInclude Include="CM_Img_Player.h" />
     <ClInclude Include="CM_Img_Test.h" />
     <ClInclude Include="CM_ParameterSystem.h" />
+    <ClInclude Include="CM_Spring.h" />
     <ClInclude Include="CM_View_State.h" />
     <ClInclude Include="CResult.h" />
     <ClInclude Include="CR_Background.h" />

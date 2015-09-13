@@ -29,17 +29,7 @@ struct SM_Sys_MapData
 
 			if (mx1 <= ex2 && ex1 <= mx2 && my1 <= ey2 && ey1 <= my2)
 			{
-				if (CInput::GetState(0, CInput::eHold, CInput::eLeft))
-				{
-					target->getPos().x -= 4;
-				}
-
-				else if (CInput::GetState(0, CInput::eHold, CInput::eRight))
-				{
-					target->getPos().x += 4;
-				}
-
-				i = -1;
+				return true;
 			}
 		}
 

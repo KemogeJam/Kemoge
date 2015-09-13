@@ -7,13 +7,13 @@ void CM_ParameterSystem::Init() {
 	m_GameStatus.m_DownDepth = 0;
 	m_GameStatus.m_UpDepth = 0;
 	m_GameStatus.m_Energy = 100.0f;
-	m_GameStatus.m_Life = 3;
+	m_GameStatus.m_Life = 1;
 	m_GameStatus.m_Score = 0;
 
 	//ステージ情報初期化
 	m_StageParameter.m_Depth = 100;
 	m_StageParameter.m_ConnectionPercent = 20.0f;
-	m_StageParameter.m_DamagePerSecond = 1.0f;
+	m_StageParameter.m_DamagePerSecond = 5.0f;
 }
 
 void CM_ParameterSystem::Update() {
@@ -33,6 +33,7 @@ void CM_ParameterSystem::Update() {
 	//体力無くなったら残機が減る
 	if (m_GameStatus.m_Energy < 0.0f) {
 		m_GameStatus.m_Life--;
+		m_GameStatus.m_Energy = 100.0f;
 		if (m_GameStatus.m_Life <= 0) {
 			m_IsGameOver = true;
 		}
@@ -92,4 +93,8 @@ int CM_ParameterSystem::GetRemainDepth() {
 		return m_StageParameter.m_Depth - m_GameStatus.m_UpDepth;
 	}
 	return 0;
+}
+
+bool CM_ParameterSystem::IsgameOver() {
+	return m_IsGameOver;
 }

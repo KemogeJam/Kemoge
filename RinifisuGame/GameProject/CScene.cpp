@@ -7,5 +7,5 @@ CScene::~CScene()
 
 ESceneChange CScene::Update()
 {
-	return ESceneChange::Main;
+	return ESceneChange::Title;
 }

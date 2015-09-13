@@ -8,6 +8,7 @@ CMainGame::CMainGame()
 	CGlobal::Load_Image("MainGame\\Character");
 	CGlobal::Load_Image("MainGame\\ViewState");
 	CGlobal::Load_Image("MainGame\\MainGame_Block");
+	CGlobal::Load_Image("MainGame\\MainGame_Back");
 }
 
 CMainGame::~CMainGame()
@@ -21,6 +22,8 @@ ESceneChange CMainGame::Update()
 	switch (m_Scene)
 	{
 	case EGameScene::Create:
+		m_Background = new CM_Background();
+		m_Spring = new CM_Spring();
 		m_Sys_Map = new CM_Sys_MapGenerator(10, 20);
 		m_View_State = new CM_View_State();
 		m_ParameterSystem = new CM_ParameterSystem();
@@ -49,10 +52,21 @@ ESceneChange CMainGame::Update()
 			int blockCount = m_Sys_Map->CrashBlock(++debug);
 			m_ParameterSystem->BreakBlock(blockCount);
 		}
+
+		//ゲームオーバー確認
+		if (m_ParameterSystem->IsgameOver()) {
+			m_Scene = EGameScene::GameOver;
+		}
 	}
 		break;
 
 		//----------------------------------------------------------------------------------------------------------//
+	case EGameScene::GameOver:
+		if (CInput::GetState(0, CInput::ePush, CInput::eButton1))
+		{
+			return ESceneChange::Title;
+		}
+		break;
 
 	default:
 
