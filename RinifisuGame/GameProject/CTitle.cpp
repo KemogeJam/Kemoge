@@ -1,12 +1,10 @@
 #include "CTitle.h"
-#include "CharacterImage.h"
 
 CTitle::CTitle()
 	: m_Scene(ETitleScene::Create)
 {
 	//アセットの初期化
 	CGlobal::Load_Image("Title\\background");
-	CGlobal::Load_Image("MainGame\\Character");
 }
 
 CTitle::~CTitle()
@@ -21,7 +19,6 @@ ESceneChange CTitle::Update()
 	{
 	case ETitleScene::Create:
 		m_Background = new CTI_Background();
-		new CharacterImage();
 		m_Scene = ETitleScene::Wait;
 		break;
 
