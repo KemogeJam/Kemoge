@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:90fbd97b1193b4e83d5b934f559f9f28:03c75eafc1a95f2ad9c28465a1bd3226:729c0ac38095df9009a3e230a4474fc0$ -->
+<TextureAtlas imagePath="Character.png" width="2100" height="100">
+    <SubTexture name="1-0" x="0" y="0" width="100" height="100"/>
+    <SubTexture name="1-1" x="100" y="0" width="100" height="100"/>
+    <SubTexture name="2-0" x="200" y="0" width="100" height="100"/>
+    <SubTexture name="3-0" x="300" y="0" width="100" height="100"/>
+    <SubTexture name="3-1" x="400" y="0" width="100" height="100"/>
+    <SubTexture name="3-2" x="500" y="0" width="100" height="100"/>
+    <SubTexture name="3-3" x="600" y="0" width="100" height="100"/>
+    <SubTexture name="3-4" x="700" y="0" width="100" height="100"/>
+    <SubTexture name="3-5" x="800" y="0" width="100" height="100"/>
+    <SubTexture name="4-0" x="900" y="0" width="100" height="100"/>
+    <SubTexture name="4-1" x="1000" y="0" width="100" height="100"/>
+    <SubTexture name="4-2" x="1100" y="0" width="100" height="100"/>
+    <SubTexture name="5-0" x="1200" y="0" width="100" height="100"/>
+    <SubTexture name="5-1" x="1300" y="0" width="100" height="100"/>
+    <SubTexture name="5-2" x="1400" y="0" width="100" height="100"/>
+    <SubTexture name="6-0" x="1500" y="0" width="100" height="100"/>
+    <SubTexture name="6-1" x="1600" y="0" width="100" height="100"/>
+    <SubTexture name="6-2" x="1700" y="0" width="100" height="100"/>
+    <SubTexture name="6-3" x="1800" y="0" width="100" height="100"/>
+    <SubTexture name="6-4" x="1900" y="0" width="100" height="100"/>
+    <SubTexture name="6-5" x="2000" y="0" width="100" height="100"/>
+</TextureAtlas>

@@ -27,7 +27,7 @@ ESceneChange CMainGame::Update()
 		m_ParameterSystem->Init();
 
 		//m_Img_Num = new CM_Img_Number( );
-		m_Img_Player = new CM_Img_Player();
+		m_Img_Player = new CM_Img_Player(m_Sys_Map->GetMapDataPointer());
 
 		m_Scene = EGameScene::Wait;
 		break;

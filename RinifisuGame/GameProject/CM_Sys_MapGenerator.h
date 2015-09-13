@@ -24,6 +24,8 @@ public:
 	 */
 	int CrashBlock(int group);
 
+	SM_Sys_MapData * GetMapDataPointer() { return &m_Map; }
+
 protected:
 	void Update();
 };

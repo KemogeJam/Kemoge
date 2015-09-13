@@ -26,6 +26,8 @@ public:
 public:
 	CM_Img_Block(const int group, const CVector2D position, const int item = 0);
 
+	CImage * GetImagePointer() { return &m_Image; }
+
 protected:
 	void Update();
 	void Draw();

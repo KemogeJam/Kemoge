@@ -14,6 +14,8 @@ public:
 	//アニメーションを切り替えます
 	void change(int animationId);
 
+	CImage & getImage() { return m_Image; }
+
 protected:
 	void Update();
 	void Draw();

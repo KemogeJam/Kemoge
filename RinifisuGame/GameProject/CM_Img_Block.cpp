@@ -52,6 +52,8 @@ void CM_Img_Block::Update()
 
 void CM_Img_Block::Draw()
 {
+	if (960.0f < m_Position.y + CGlobal::m_Camera || m_Position.y + CGlobal::m_Camera < -80.0f) return;
+
 	std::string drawStr = std::to_string(m_Up) + std::to_string(m_Down) + std::to_string(m_Left) + std::to_string(m_Right);
 
 	TextureRect drawRect = CGlobal::Get_Rect("MainGame\\MainGame_Block", "10000");
