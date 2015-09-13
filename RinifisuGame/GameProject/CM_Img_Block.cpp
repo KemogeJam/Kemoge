@@ -2,8 +2,8 @@
 
 CM_Img_Block::CM_Img_Block(const int group, const CVector2D position, const int item)
 	: GameTask({ BIND(CM_Img_Block::Update) }, (int)EPriority::CM_Img_Block, (int)EPriority::CM_Img_Block)
+	, m_Image(CGlobal::Get_Image("MainGame\\MainGame_Block",""))
 
-	, m_Image(CGlobal::Get_Image("MainGame", "Test"))
 	, m_Up(-1), m_Down(-1), m_Left(-1), m_Right(-1)
 
 	, m_Group(group)
@@ -52,7 +52,14 @@ void CM_Img_Block::Update()
 
 void CM_Img_Block::Draw()
 {
-	m_Debug.Draw(static_cast<int>(m_Image.getPos().x), static_cast<int>(m_Image.getPos().y + CGlobal::m_Camera), m_Color.x, m_Color.y, m_Color.z, "Åú");
+	std::string drawStr = std::to_string(m_Up) + std::to_string(m_Down) + std::to_string(m_Left) + std::to_string(m_Right);
 
-	//m_Image.Draw();
+	TextureRect drawRect = CGlobal::Get_Rect("MainGame\\MainGame_Block", "10000");
+	m_Image.setRect(drawRect.x, drawRect.y, drawRect.x + drawRect.w, drawRect.y + drawRect.h);
+	m_Image.setSize(drawRect.w, drawRect.h);
+	m_Image.setColor(m_Color.x, m_Color.y, m_Color.z, 1.0f);
+
+	//m_Debug.Draw(static_cast<int>(m_Image.getPos().x), static_cast<int>(m_Image.getPos().y + CGlobal::m_Camera), m_Color.x, m_Color.y, m_Color.z, "Åú");
+
+	m_Image.Draw();
 }

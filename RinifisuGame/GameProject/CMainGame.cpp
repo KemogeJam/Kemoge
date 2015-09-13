@@ -6,6 +6,7 @@ CMainGame::CMainGame()
 	//アセットの初期化
 	CGlobal::Load_Image("MainGame");
 	CGlobal::Load_Image("MainGame\\ViewState");
+	CGlobal::Load_Image("MainGame\\MainGame_Block");
 }
 
 CMainGame::~CMainGame()
