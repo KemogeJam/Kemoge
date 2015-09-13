@@ -59,7 +59,7 @@ void CM_Sys_MapGenerator::CreateBlock(CVector2D start, const int back)
 
 	//ƒuƒƒbƒN‚Ì¶¬
 	unsigned int nextID = m_Map.m_Img_Block.nextID();
-	CVector2D createPosition(200.0f + 80.0f * start.x, 200.0f + 80.0f * start.y);
+	CVector2D createPosition(80.0f + 80.0f * start.x, 0.0f + 80.0f * start.y);
 	m_Map.m_Img_Block.Add(new CM_Img_Block(m_Map.m_Group, createPosition));
 	m_Map.m_AddList.push_back(start);
 

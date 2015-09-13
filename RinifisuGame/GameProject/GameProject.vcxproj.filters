@@ -76,6 +76,9 @@
     <ClCompile Include="CM_Img_Player.cpp">
       <Filter>ソースファイル\MainGame</Filter>
     </ClCompile>
+    <ClCompile Include="CM_Background.cpp">
+      <Filter>ソースファイル\MainGame</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
@@ -164,6 +167,9 @@
       <Filter>ヘッダーファイル\MainGame</Filter>
     </ClInclude>
     <ClInclude Include="CM_Img_Player.h">
+      <Filter>ヘッダーファイル\MainGame</Filter>
+    </ClInclude>
+    <ClInclude Include="CM_Background.h">
       <Filter>ヘッダーファイル\MainGame</Filter>
     </ClInclude>
   </ItemGroup>

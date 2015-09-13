@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:efe021f85f53f4c3555d9e09c12bd6c0:6acadf0511170e13ebeed81c1db95d7a:6b80235fe4061c1bb3918ce4cfbfd68a$ -->
+<TextureAtlas imagePath="MainGame_Back.png" width="2250" height="964">
+    <SubTexture name="Rock" x="2" y="2" width="720" height="960"/>
+    <SubTexture name="Side" x="1446" y="2" width="80" height="960"/>
+    <SubTexture name="残機数字" x="1528" y="620" width="327" height="225" frameX="-33" frameY="-16" frameWidth="400" frameHeight="250"/>
+    <SubTexture name="Spring" x="1528" y="2" width="720" height="616" frameX="0" frameY="-344" frameWidth="720" frameHeight="960"/>
+    <SubTexture name="Background" x="724" y="2" width="720" height="960"/>
+    <SubTexture name="間欠泉2" x="1587" y="847" width="47" height="96" frameX="-27" frameY="-4" frameWidth="100" frameHeight="100"/>
+    <SubTexture name="間欠泉3" x="1636" y="847" width="41" height="96" frameX="-28" frameY="-4" frameWidth="100" frameHeight="100"/>
+    <SubTexture name="間欠泉１" x="1528" y="847" width="57" height="96" frameX="-17" frameY="-4" frameWidth="100" frameHeight="100"/>
+</TextureAtlas>

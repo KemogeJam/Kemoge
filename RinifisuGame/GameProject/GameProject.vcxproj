@@ -90,6 +90,7 @@
     <ClCompile Include="CharacterImage.cpp" />
     <ClCompile Include="CMainGame.cpp" />
     <ClCompile Include="CGlobal.cpp" />
+    <ClCompile Include="CM_Background.cpp" />
     <ClCompile Include="CM_Img_Block.cpp" />
     <ClCompile Include="CM_Img_Number.cpp" />
     <ClCompile Include="CM_Img_Player.cpp" />
@@ -120,6 +121,7 @@
     <ClInclude Include="CharacterImage.h" />
     <ClInclude Include="CMainGame.h" />
     <ClInclude Include="CGlobal.h" />
+    <ClInclude Include="CM_Background.h" />
     <ClInclude Include="CM_Img_Block.h" />
     <ClInclude Include="CM_Img_Number.h" />
     <ClInclude Include="CM_Img_Player.h" />
