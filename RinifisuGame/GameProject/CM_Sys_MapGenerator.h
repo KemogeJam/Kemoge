@@ -18,8 +18,11 @@ private:
 
 public:
 	CM_Sys_MapGenerator(const int level, const int depth);
-
-	void CrashBlock(int group);
+	
+	/*ブロックを破壊する
+	_* return int 壊したブロック数
+	 */
+	int CrashBlock(int group);
 
 protected:
 	void Update();

@@ -113,16 +113,19 @@ void CM_Sys_MapGenerator::CreateBlock(CVector2D start, const int back)
 	else m_Map.m_Img_Block(nextID).m_Right = 0;
 }
 
-void CM_Sys_MapGenerator::CrashBlock(int group)
+int CM_Sys_MapGenerator::CrashBlock(int group)
 {
+	int blockCount = 0;
 	for (unsigned int i = 0; i < m_Map.m_Img_Block.size(); i++)
 	{
 		if (group == m_Map.m_Img_Block[i].m_Group)
 		{
 			m_Map.m_Img_Block.Clear(i);
+			blockCount++;
 			i = -1;
 		}
 	}
+	return blockCount;
 }
 
 void CM_Sys_MapGenerator::Update()
