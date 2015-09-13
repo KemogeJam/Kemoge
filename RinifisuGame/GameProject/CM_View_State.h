@@ -12,6 +12,13 @@ private:
 	CImage m_Images_Depth[DEPTH_NUMBER_MAX]; //深さの数値
 	CImage m_Images_Pts[PTS_NUMBER_MAX]; //スコアの数値
 	CImage m_Image_Life; //残機の数値
+	CImage m_Image_GaugeFrame; //メーターの枠
+	CImage m_Image_GaugeBackground; //メーターの背景
+	CImage m_Image_GaugeGreen; //緑メーター
+	CImage m_Image_GaugeYellow; //黄色メーター
+	CImage m_Image_GaugeRed; //赤メーター
+	CImage m_Image_Face; //顔
+
 
 public:
 	CM_View_State();
