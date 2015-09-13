@@ -40,7 +40,7 @@ void CM_ParameterSystem::Update() {
 }
 
 void CM_ParameterSystem::BreakBlock(int count) {
-	m_GameStatus.m_Score += 10 * count;
+	m_GameStatus.m_Score += 100 * count;
 }
 
 void CM_ParameterSystem::ObtainWarm() {

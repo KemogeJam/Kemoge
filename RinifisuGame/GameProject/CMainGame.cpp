@@ -23,6 +23,8 @@ ESceneChange CMainGame::Update()
 	case EGameScene::Create:
 		m_Sys_Map = new CM_Sys_MapGenerator(10, 20);
 		m_View_State = new CM_View_State();
+		m_ParameterSystem = new CM_ParameterSystem();
+		m_ParameterSystem->Init();
 
 		//m_Img_Num = new CM_Img_Number( );
 		m_Img_Player = new CM_Img_Player();
@@ -36,9 +38,16 @@ ESceneChange CMainGame::Update()
 	{
 		static int debug = 0;
 
+		m_ParameterSystem->Update();
+		m_View_State->UpdateEnergy(m_ParameterSystem->GetEnergy());
+		m_View_State->UpdateDepthCount(m_ParameterSystem->GetRemainDepth());
+		m_View_State->UpdatePts(m_ParameterSystem->GetScore());
+		m_View_State->UpdateLife(m_ParameterSystem->GetLife());
+
 		if (CInput::GetState(0, CInput::ePush, CInput::eButton1))
 		{
-			m_Sys_Map->CrashBlock(++debug);
+			int blockCount = m_Sys_Map->CrashBlock(++debug);
+			m_ParameterSystem->BreakBlock(blockCount);
 		}
 	}
 		break;

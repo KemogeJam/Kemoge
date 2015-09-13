@@ -10,6 +10,7 @@
 #include "CM_Img_Number.h"
 #include "CM_View_State.h"
 #include "CM_Img_Player.h"
+#include "CM_ParameterSystem.h"
 
 enum class EGameScene
 {
@@ -27,6 +28,7 @@ private:
 	GameTaskPointer<CM_Img_Number> m_Img_Num;
 	GameTaskPointer<CM_View_State> m_View_State;
 	GameTaskPointer<CM_Img_Player> m_Img_Player;
+	CM_ParameterSystem *m_ParameterSystem;
 
 public:
 	CMainGame();
