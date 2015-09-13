@@ -5,6 +5,7 @@ CMainGame::CMainGame()
 {
 	//アセットの初期化
 	CGlobal::Load_Image("MainGame");
+	CGlobal::Load_Image("MainGame\\Character");
 	CGlobal::Load_Image("MainGame\\ViewState");
 	CGlobal::Load_Image("MainGame\\MainGame_Block");
 }
@@ -24,6 +25,7 @@ ESceneChange CMainGame::Update()
 		m_View_State = new CM_View_State();
 
 		//m_Img_Num = new CM_Img_Number( );
+		m_Img_Player = new CM_Img_Player();
 
 		m_Scene = EGameScene::Wait;
 		break;

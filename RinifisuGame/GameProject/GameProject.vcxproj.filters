@@ -73,6 +73,9 @@
     <ClCompile Include="CM_View_State.cpp">
       <Filter>ソースファイル\MainGame</Filter>
     </ClCompile>
+    <ClCompile Include="CM_Img_Player.cpp">
+      <Filter>ソースファイル\MainGame</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
@@ -158,6 +161,9 @@
       <Filter>ヘッダーファイル\MainGame</Filter>
     </ClInclude>
     <ClInclude Include="CM_View_State.h">
+      <Filter>ヘッダーファイル\MainGame</Filter>
+    </ClInclude>
+    <ClInclude Include="CM_Img_Player.h">
       <Filter>ヘッダーファイル\MainGame</Filter>
     </ClInclude>
   </ItemGroup>

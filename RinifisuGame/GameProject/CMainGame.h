@@ -9,6 +9,7 @@
 #include "CM_Sys_MapGenerator.h"
 #include "CM_Img_Number.h"
 #include "CM_View_State.h"
+#include "CM_Img_Player.h"
 
 enum class EGameScene
 {
@@ -25,6 +26,7 @@ private:
 	GameTaskPointer<CM_Sys_MapGenerator> m_Sys_Map;
 	GameTaskPointer<CM_Img_Number> m_Img_Num;
 	GameTaskPointer<CM_View_State> m_View_State;
+	GameTaskPointer<CM_Img_Player> m_Img_Player;
 
 public:
 	CMainGame();
