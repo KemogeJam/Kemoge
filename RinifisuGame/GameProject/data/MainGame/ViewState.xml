@@ -1,11 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
-<!-- $TexturePacker:SmartUpdate:8904f9db4e89335ac87089466f2c31a8:ab20cf4f2a93195df126ed99cf3285ce:c9ebf87e8bd1f344d4f2ebc99260b1b7$ -->
-<TextureAtlas imagePath="ViewState.png" width="404" height="1515">
-    <SubTexture name="NumberPts" x="2" y="1211" width="341" height="137" frameX="-33" frameY="-33" frameWidth="400" frameHeight="200"/>
+<!-- $TexturePacker:SmartUpdate:f437659562d674973255313e1e692205:301f975bdd9c5702ba76085987d6dfe4:9a217228b6b65e465c3e410e731a3122$ -->
+<TextureAtlas imagePath="ViewState.png" width="404" height="1282">
     <SubTexture name="Background" x="2" y="2" width="400" height="960"/>
-    <SubTexture name="EnergyMeter" x="2" y="964" width="370" height="245" frameX="-15" frameY="-93" frameWidth="400" frameHeight="350"/>
-    <SubTexture name="MarkGround" x="2" y="1350" width="129" height="90" frameX="-6" frameY="-24" frameWidth="150" frameHeight="150"/>
-    <SubTexture name="MarkSpring" x="133" y="1350" width="127" height="89" frameX="-10" frameY="-22" frameWidth="150" frameHeight="150"/>
-    <SubTexture name="NumberLife" x="133" y="1441" width="177" height="72" frameX="-108" frameY="-60" frameWidth="400" frameHeight="200"/>
+    <SubTexture name="Face" x="262" y="1121" width="91" height="98" frameX="-7" frameY="0" frameWidth="100" frameHeight="100"/>
+    <SubTexture name="GaugeBackground" x="2" y="1048" width="357" height="71" frameX="-20" frameY="-15" frameWidth="400" frameHeight="100"/>
+    <SubTexture name="GaugeFrame" x="2" y="964" width="370" height="82" frameX="-14" frameY="-10" frameWidth="400" frameHeight="100"/>
+    <SubTexture name="GaugeGreen" x="362" y="1048" width="4" height="68" frameX="-12" frameY="-7" frameWidth="30" frameHeight="80"/>
+    <SubTexture name="GaugeRed" x="370" y="1048" width="4" height="68" frameX="-12" frameY="-7" frameWidth="30" frameHeight="80"/>
+    <SubTexture name="GaugeYellow" x="237" y="1212" width="4" height="68" frameX="-12" frameY="-7" frameWidth="30" frameHeight="80"/>
+    <SubTexture name="MarkGround" x="2" y="1121" width="129" height="90" frameX="-6" frameY="-24" frameWidth="150" frameHeight="150"/>
+    <SubTexture name="MarkSpring" x="133" y="1121" width="127" height="89" frameX="-10" frameY="-22" frameWidth="150" frameHeight="150"/>
+    <SubTexture name="Per0" x="352" y="1223" width="22" height="18" frameX="-7" frameY="-9" frameWidth="35" frameHeight="35"/>
+    <SubTexture name="Per1" x="338" y="1221" width="12" height="19" frameX="-10" frameY="-9" frameWidth="35" frameHeight="35"/>
+    <SubTexture name="Per2" x="376" y="1223" width="22" height="18" frameX="-7" frameY="-9" frameWidth="35" frameHeight="35"/>
+    <SubTexture name="Per3" x="377" y="1059" width="22" height="18" frameX="-7" frameY="-9" frameWidth="35" frameHeight="35"/>
+    <SubTexture name="Per4" x="361" y="1243" width="19" height="19" frameX="-9" frameY="-9" frameWidth="35" frameHeight="35"/>
+    <SubTexture name="Per5" x="374" y="1018" width="23" height="18" frameX="-7" frameY="-9" frameWidth="35" frameHeight="35"/>
+    <SubTexture name="Per6" x="377" y="1079" width="22" height="18" frameX="-7" frameY="-9" frameWidth="35" frameHeight="35"/>
+    <SubTexture name="Per7" x="377" y="1038" width="22" height="19" frameX="-8" frameY="-9" frameWidth="35" frameHeight="35"/>
+    <SubTexture name="Per8" x="377" y="1099" width="22" height="18" frameX="-7" frameY="-9" frameWidth="35" frameHeight="35"/>
+    <SubTexture name="Per9" x="338" y="1243" width="21" height="18" frameX="-8" frameY="-9" frameWidth="35" frameHeight="35"/>
+    <SubTexture name="Pts0" x="355" y="1121" width="47" height="49" frameX="-18" frameY="-16" frameWidth="80" frameHeight="80"/>
+    <SubTexture name="Pts1" x="374" y="964" width="26" height="52" frameX="-23" frameY="-14" frameWidth="80" frameHeight="80"/>
+    <SubTexture name="Pts2" x="95" y="1213" width="45" height="49" frameX="-19" frameY="-16" frameWidth="80" frameHeight="80"/>
+    <SubTexture name="Pts3" x="142" y="1212" width="45" height="49" frameX="-19" frameY="-16" frameWidth="80" frameHeight="80"/>
+    <SubTexture name="Pts4" x="2" y="1213" width="44" height="52" frameX="-20" frameY="-14" frameWidth="80" frameHeight="80"/>
+    <SubTexture name="Pts5" x="189" y="1212" width="45" height="49" frameX="-19" frameY="-16" frameWidth="80" frameHeight="80"/>
+    <SubTexture name="Pts6" x="244" y="1221" width="45" height="49" frameX="-19" frameY="-16" frameWidth="80" frameHeight="80"/>
+    <SubTexture name="Pts7" x="48" y="1213" width="45" height="51" frameX="-19" frameY="-16" frameWidth="80" frameHeight="80"/>
+    <SubTexture name="Pts8" x="355" y="1172" width="46" height="49" frameX="-18" frameY="-16" frameWidth="80" frameHeight="80"/>
+    <SubTexture name="Pts9" x="291" y="1221" width="45" height="49" frameX="-19" frameY="-16" frameWidth="80" frameHeight="80"/>
 </TextureAtlas>
