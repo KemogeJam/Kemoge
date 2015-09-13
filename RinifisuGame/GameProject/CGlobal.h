@@ -32,6 +32,7 @@ enum class EPriority
 	CM_Img_Block,
 
 	CM_Img_Number,
+	CM_Img_Player,
 
 	//‚»‚Ì‘¼
 };

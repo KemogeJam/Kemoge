@@ -7,6 +7,7 @@ private:
 	CImage		m_Image;		//画像データ
 
 	CVector3D	m_Color;		//色 デバッグ
+	CVector2D	m_Position;
 
 	CFont		m_Debug{ L"メイリオ", 165 };
 

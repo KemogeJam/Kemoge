@@ -6,9 +6,9 @@ CM_Img_Block::CM_Img_Block(const int group, const CVector2D position, const int 
 
 	, m_Up(-1), m_Down(-1), m_Left(-1), m_Right(-1)
 
-	, m_Group(group)
+	, m_Group(group), m_Position(position)
 {
-	m_Image.setPos(position);
+	m_Image.setPos(m_Position);
 
 	switch (item)
 	{
@@ -58,6 +58,7 @@ void CM_Img_Block::Draw()
 	m_Image.setRect(drawRect.x, drawRect.y, drawRect.x + drawRect.w, drawRect.y + drawRect.h);
 	m_Image.setSize(drawRect.w, drawRect.h);
 	m_Image.setColor(m_Color.x, m_Color.y, m_Color.z, 1.0f);
+	m_Image.setPos(m_Position.x, m_Position.y + CGlobal::m_Camera);
 
 	//m_Debug.Draw(static_cast<int>(m_Image.getPos().x), static_cast<int>(m_Image.getPos().y + CGlobal::m_Camera), m_Color.x, m_Color.y, m_Color.z, "Åú");
 
