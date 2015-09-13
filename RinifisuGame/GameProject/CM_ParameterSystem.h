@@ -49,4 +49,6 @@ public:
 	//Žc‹@‚ðŽæ“¾‚µ‚Ü‚·
 	int GetLife();
 
+	bool IsgameOver();
+
 };

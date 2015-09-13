@@ -15,6 +15,7 @@ enum class EGameScene
 {
 	Create, //生成
 	Wait,	//待機
+	GameOver, //ゲームオーバー
 };
 
 class CMainGame : public CScene

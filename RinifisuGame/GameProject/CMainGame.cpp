@@ -47,10 +47,21 @@ ESceneChange CMainGame::Update()
 			int blockCount = m_Sys_Map->CrashBlock(++debug);
 			m_ParameterSystem->BreakBlock(blockCount);
 		}
+
+		//ゲームオーバー確認
+		if (m_ParameterSystem->IsgameOver()) {
+			m_Scene = EGameScene::GameOver;
+		}
 	}
 		break;
 
 		//----------------------------------------------------------------------------------------------------------//
+	case EGameScene::GameOver:
+		if (CInput::GetState(0, CInput::ePush, CInput::eButton1))
+		{
+			return ESceneChange::Title;
+		}
+		break;
 
 	default:
 
