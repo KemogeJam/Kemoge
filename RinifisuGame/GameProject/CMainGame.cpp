@@ -23,6 +23,7 @@ ESceneChange CMainGame::Update()
 	{
 	case EGameScene::Create:
 		m_Background = new CM_Background();
+		m_Spring = new CM_Spring();
 		m_Sys_Map = new CM_Sys_MapGenerator(10, 20);
 		m_View_State = new CM_View_State();
 		m_ParameterSystem = new CM_ParameterSystem();

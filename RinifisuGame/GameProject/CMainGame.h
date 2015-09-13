@@ -12,6 +12,7 @@
 #include "CM_Img_Player.h"
 #include "CM_ParameterSystem.h"
 #include "CM_Background.h"
+#include "CM_Spring.h"
 
 enum class EGameScene
 {
@@ -27,6 +28,7 @@ private:
 
 private:
 	GameTaskPointer<CM_Background> m_Background;
+	GameTaskPointer<CM_Spring> m_Spring;
 	GameTaskPointer<CM_Sys_MapGenerator> m_Sys_Map;
 	GameTaskPointer<CM_Img_Number> m_Img_Num;
 	GameTaskPointer<CM_View_State> m_View_State;

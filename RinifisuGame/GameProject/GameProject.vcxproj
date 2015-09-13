@@ -96,6 +96,7 @@
     <ClCompile Include="CM_Img_Player.cpp" />
     <ClCompile Include="CM_Img_Test.cpp" />
     <ClCompile Include="CM_ParameterSystem.cpp" />
+    <ClCompile Include="CM_Spring.cpp" />
     <ClCompile Include="CM_View_State.cpp" />
     <ClCompile Include="CResult.cpp" />
     <ClCompile Include="CR_Background.cpp" />
@@ -127,6 +128,7 @@
     <ClInclude Include="CM_Img_Player.h" />
     <ClInclude Include="CM_Img_Test.h" />
     <ClInclude Include="CM_ParameterSystem.h" />
+    <ClInclude Include="CM_Spring.h" />
     <ClInclude Include="CM_View_State.h" />
     <ClInclude Include="CResult.h" />
     <ClInclude Include="CR_Background.h" />
